@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tondz/Desktop/WebAPI/CuaHangDoChoiAPI/CuaHangDoChoiAPI.csproj": {}
+    "D:\\WebAPI\\QuanLyCuaHangToan\\CuaHangDoChoiAPI\\CuaHangDoChoiAPI.csproj": {}
   },
   "projects": {
-    "/Users/tondz/Desktop/WebAPI/CuaHangDoChoiAPI/CuaHangDoChoiAPI.csproj": {
+    "D:\\WebAPI\\QuanLyCuaHangToan\\CuaHangDoChoiAPI\\CuaHangDoChoiAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tondz/Desktop/WebAPI/CuaHangDoChoiAPI/CuaHangDoChoiAPI.csproj",
+        "projectUniqueName": "D:\\WebAPI\\QuanLyCuaHangToan\\CuaHangDoChoiAPI\\CuaHangDoChoiAPI.csproj",
         "projectName": "CuaHangDoChoiAPI",
-        "projectPath": "/Users/tondz/Desktop/WebAPI/CuaHangDoChoiAPI/CuaHangDoChoiAPI.csproj",
-        "packagesPath": "/Users/tondz/.nuget/packages/",
-        "outputPath": "/Users/tondz/Desktop/WebAPI/CuaHangDoChoiAPI/obj/",
+        "projectPath": "D:\\WebAPI\\QuanLyCuaHangToan\\CuaHangDoChoiAPI\\CuaHangDoChoiAPI.csproj",
+        "packagesPath": "C:\\Users\\TonDZ\\.nuget\\packages\\",
+        "outputPath": "D:\\WebAPI\\QuanLyCuaHangToan\\CuaHangDoChoiAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/tondz/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\TonDZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -61,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
