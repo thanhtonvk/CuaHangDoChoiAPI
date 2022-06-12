@@ -4,7 +4,7 @@ using CuaHangDoChoiAPI.Models;
 
 namespace CuaHangDoChoiAPI.BLL
 {
-    public class ImageProductBLL
+   public class ImageProductBLL
     {
         private ImageProductDAL dal = new ImageProductDAL();
 

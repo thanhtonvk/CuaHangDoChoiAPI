@@ -6,7 +6,7 @@ using Microsoft.Data.SqlClient;
 
 namespace CuaHangDoChoiAPI.DAL
 {
-    public class CategoryDAL
+   public class CategoryDAL
     {
         public int addCategory(Category category)
         {

@@ -5,7 +5,7 @@ using CuaHangDoChoiAPI.Models;
 
 namespace CuaHangDoChoiAPI.BLL
 {
-    public class OrderBLL
+ public class OrderBLL
     {
         private OrderDAL dal = new OrderDAL();
 

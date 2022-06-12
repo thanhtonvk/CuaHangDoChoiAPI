@@ -13,31 +13,27 @@ namespace CuaHangDoChoiAPI.Controllers
         [HttpPost]
         public IActionResult PostProduct(Product product)
         {
-            if (_bll.AddProduct(product) == 0)
-            {
-                return Ok(product);
-            }
-
-            return BadRequest("Error");
+            return Ok(_bll.AddProduct(product));
         }
 
         [HttpPut]
-        public IActionResult PutProduct(int id, Product product)
+        public IActionResult PutProduct(Product product)
         {
-            if (_bll.UpdateProduct(id, product) == 0) return Ok(product);
-            return BadRequest("Error");
+           return Ok(_bll.UpdateProduct(product.ID, product) > 0);
+           
         }
 
         [HttpPut]
         public IActionResult DeleteProduct(int id)
         {
-            if (_bll.DeleteProduct(id) == 0) return Ok("Success");
+            if (_bll.DeleteProduct(id) > 0) return Ok("Success");
             return BadRequest("Error");
         }
 
         [HttpGet]
         public IActionResult GetProductList(string keyword)
         {
+            if (keyword == "null") return Ok(_bll.GetListProduct(""));
             return Ok(_bll.GetListProduct(keyword));
         }
 

@@ -3,8 +3,7 @@ using CuaHangDoChoiAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CuaHangDoChoiAPI.Controllers
-{
-    [Route("api/[controller]/[action]")]
+{ [Route("api/[controller]/[action]")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
@@ -13,27 +12,28 @@ namespace CuaHangDoChoiAPI.Controllers
         [HttpPost]
         public IActionResult PostCategory(Category category)
         {
-            if (_bll.AddCategory(category) == 0) return Ok("Thành công");
+            if (_bll.AddCategory(category) >= 0) return Ok("Thành công");
             return BadRequest("Lỗi");
         }
 
         [HttpPut]
-        public IActionResult PutCategory(int id, Category category)
+        public IActionResult PutCategory(Category category)
         {
-            if (_bll.UpdateCategory(id, category) == 0) return Ok("Thành công");
+            if (_bll.UpdateCategory(category.ID, category) >= 0) return Ok("Thành công");
             return BadRequest("Lỗi");
         }
 
         [HttpPut]
         public IActionResult DeleteCategory(int id)
         {
-            if (_bll.DeleteCategory(id) == 0) return Ok("Thành công");
+            if (_bll.DeleteCategory(id) >=0) return Ok("Thành công");
             return BadRequest("Lỗi");
         }
 
         [HttpGet]
         public IActionResult GetCategoryList(string keyword)
         {
+            if (keyword.Equals("null")) return Ok(_bll.GetListCategory(""));
             return Ok(_bll.GetListCategory(keyword));
         }
 

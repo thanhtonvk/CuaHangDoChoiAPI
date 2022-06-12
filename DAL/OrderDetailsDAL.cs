@@ -6,7 +6,7 @@ using Microsoft.Data.SqlClient;
 
 namespace CuaHangDoChoiAPI.DAL
 {
-    public class OrderDetailsDAL
+ public class OrderDetailsDAL
     {
         public int addOrderDetails(int OrderID, int ProductID, int Quantity)
         {
